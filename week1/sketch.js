@@ -8,7 +8,7 @@ let thetaXDir = 1;
 let thetaYDir = -1;
 
 function draw() {
-	background();
+	background(51, 0.4);
 
 	thetaX += deltaTime * 0.00005 * thetaXDir;
 
