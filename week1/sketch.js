@@ -8,6 +8,8 @@ let thetaXDir = 1;
 let thetaYDir = -1;
 
 function draw() {
+	background();
+
 	thetaX += deltaTime * 0.00005 * thetaXDir;
 
 	if (thetaX > Math.PI / 16 || thetaX < -Math.PI / 16) {
