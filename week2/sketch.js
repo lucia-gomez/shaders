@@ -5,11 +5,11 @@ let time = 0;
 const colors = [
 	"#4C078B",
 	"#8B0C30",
+	"#17856F",
 	"#9B197A",
 	"#B6710A",
 	"#0E852E",
 	"black",
-	"#17856F",
 	"#021D31",
 	"#7241f0",
 ];
@@ -34,7 +34,7 @@ function setup() {
 }
 
 function draw() {
-	background("white");
+	background("black");
 	noStroke();
 
 	time += deltaTime * 0.001;
@@ -57,7 +57,7 @@ function draw() {
 
 	const radii = [];
 	for (let i = 0; i < levels; i++) {
-		radii.push((i + 1) * (width / levels));
+		radii.push((i + 1) * (width / levels) + i * 20);
 	}
 
 	vertices[0] = [];

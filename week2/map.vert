@@ -27,12 +27,12 @@ void main()
 
   float dir = mod(level, 2.0) == 0.0 ? 1.0 : -1.0;
   float angle = uTime * 0.1 * dir;
-  mat3 rotation = mat3(
-    cos(angle), -sin(angle), 0.0,
-    sin(angle), cos(angle), 0.0,
-    0.0, 0.0, 1.0
-  );
-  pos = rotation * pos;
+  // mat3 rotation = mat3(
+  //   cos(angle), -sin(angle), 0.0,
+  //   sin(angle), cos(angle), 0.0,
+  //   0.0, 0.0, 1.0
+  // );
+  // pos = rotation * pos;
   
   // Set the clip space position.
   gl_Position = uProjectionMatrix * uModelViewMatrix * vec4(pos, 1.0);
