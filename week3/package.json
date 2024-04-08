@@ -5,12 +5,14 @@
 	"default": "index.html",
 	"scripts": {
 		"start": "parcel index.html --open",
-		"build": "parcel build index.html"
+		"build": "parcel build index.html",
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"three": "^0.158.0"
 	},
 	"devDependencies": {
+		"gh-pages": "^6.1.1",
 		"parcel": "^2.12.0"
 	},
 	"keywords": []
