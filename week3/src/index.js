@@ -1,8 +1,8 @@
 /* eslint-disable no-undef, no-unused-vars */
 
-import * as THREE from "three";
+import * as THREE from "./three";
 
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from "./three/examples/jsm/controls/OrbitControls.js";
 
 // Create renderer.
 const canvas = document.querySelector("#canvas");
